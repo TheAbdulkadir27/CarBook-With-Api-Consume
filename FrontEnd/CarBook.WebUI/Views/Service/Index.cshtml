@@ -1,0 +1,8 @@
+﻿@using CarBook.WebUI.ViewComponents.AboutViewComponents;
+@using CarBook.WebUI.ViewComponents.ServiceViewComponents;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/_IndexLayout.cshtml";
+}
+@await Component.InvokeAsync(nameof(_ServiceViewComponentPartial))
+@await Component.InvokeAsync(nameof(_BecomeADriverComponentPartial))

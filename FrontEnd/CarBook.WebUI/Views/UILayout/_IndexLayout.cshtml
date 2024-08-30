@@ -1,0 +1,12 @@
+﻿@using CarBook.WebUI.ViewComponents.UILayoutViewComponents;
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync(nameof(_HeadUILayoutComponentPartial))
+<body>
+    @await Component.InvokeAsync(nameof(_NavbarUILayoutComponentPartial))
+    @await Component.InvokeAsync(nameof(_MainCoverUILayoutComponentPartial))
+    @RenderBody()
+    @await Component.InvokeAsync(nameof(_FooterUILayoutComponentPartial))
+    @await Component.InvokeAsync(nameof(_ScriptsUILayoutComponentPartial))
+</body>
+</html>
